@@ -260,6 +260,13 @@ Examples:
 - `electric blue + warm charcoal`
 - `amber + slate`
 
+An important variation is a split between:
+
+- warm accent glow
+- cool neutral surfaces
+
+This is especially useful when the project uses large atmospheric gradients. In practice, `hero` and `topbar` can carry a warm glow while document and section surfaces remain cool.
+
 In a contrast theme, the goal is not to make everything the same hue. The goal is to create a controlled relationship between:
 
 - accent color
@@ -346,6 +353,37 @@ This is where a theme can gain personality. For example:
 5. keep `PrimeVue dark.surface` aligned with the neutral family
 6. audit all local dark overrides for accidental crossover
 7. inspect homepage cards and tags separately from the global background
+
+### Gradient split strategy
+
+For this project, gradients are not just decorative. They are one of the main carriers of color temperature.
+
+A useful pattern is to treat each gradient as two layers:
+
+- glow layer
+  Usually the radial accent at the top-left or bottom-right
+- base layer
+  Usually the linear surface gradient underneath
+
+This makes it possible to build themes such as:
+
+- warm glow + cool surface
+- cool glow + warm surface
+
+The most promising split discovered so far is:
+
+- `hero` and `topbar`
+  Warm accent glow, because these zones benefit from stronger identity and drama
+- `document` and regular content sections
+  Cool surface atmosphere, because readability and tonal stability matter more there
+
+Applied to tokens, that usually means:
+
+- keep `--site-doc-gradient` and section base backgrounds aligned with the neutral family
+- allow `--site-topbar-gradient` and `--site-hero-gradient` radial accents to follow the accent family
+- decide separately whether the linear base of `topbar` and `hero` should stay neutral or be lightly warmed
+
+This split is often more expressive than forcing every gradient to use the same hue family.
 
 ### Common failure mode
 

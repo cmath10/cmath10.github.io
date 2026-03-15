@@ -20,19 +20,22 @@
   --site-card-shadow: 0 18px 36px rgba(15, 23, 42, 0.08);
   --site-band-edge: rgba(15, 23, 42, 0.05);
   --site-doc-gradient:
-    radial-gradient(circle at top left, rgba(217, 161, 43, 0.1), transparent 34%),
+    radial-gradient(circle at top left, rgba(14, 165, 233, 0.09), transparent 34%),
     linear-gradient(180deg, rgba(248, 250, 252, 0.94), rgba(255, 255, 255, 0.98));
+  --site-page-gradient:
+    radial-gradient(960px 960px at top left, rgba(245, 179, 52, 0.16), transparent 72%),
+    linear-gradient(180deg, rgba(245, 249, 253, 0.96), rgba(248, 250, 252, 0.95) 18rem, rgba(255, 255, 255, 0.98) 34rem);
   --site-topbar-border: rgba(15, 23, 42, 0.08);
   --site-topbar-shadow: 0 16px 34px rgba(15, 23, 42, 0.08);
   --site-topbar-gradient:
-    radial-gradient(circle at top left, rgba(245, 179, 52, 0.2), transparent 34%),
-    linear-gradient(135deg, rgba(247, 250, 252, 0.94), rgba(255, 249, 235, 0.9) 52%, rgba(255, 255, 255, 0.94));
+    radial-gradient(circle at top left, rgba(245, 179, 52, 0.18), transparent 34%),
+    linear-gradient(135deg, rgba(247, 250, 252, 0.94), rgba(245, 248, 252, 0.92) 52%, rgba(255, 255, 255, 0.94));
   --site-hero-gradient:
-    radial-gradient(circle at top left, rgba(245, 179, 52, 0.16), transparent 38%),
-    linear-gradient(180deg, rgba(255, 251, 240, 0.96), rgba(250, 247, 240, 0.95) 34%, rgba(255, 255, 255, 0.97));
+    radial-gradient(circle at top left, rgba(245, 179, 52, 0.15), transparent 38%),
+    linear-gradient(180deg, rgba(245, 249, 253, 0.96), rgba(248, 250, 252, 0.95) 34%, rgba(255, 255, 255, 0.97));
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: linear-gradient(135deg, #0f172a 10%, #d9a12b 50%, #8f5b0b 100%);
-  --vp-home-hero-image-background-image: radial-gradient(circle at top, rgba(245, 179, 52, 0.4), rgba(217, 161, 43, 0.08) 60%);
+  --vp-home-hero-image-background-image: radial-gradient(circle at top, rgba(245, 179, 52, 0.38), rgba(217, 161, 43, 0.08) 60%);
   --vp-home-hero-image-filter: blur(64px);
 }
 
@@ -44,31 +47,35 @@
   --vp-c-text-1: rgba(244, 247, 251, 0.96);
   --vp-c-text-2: rgba(224, 231, 239, 0.82);
   --site-body-bg:
-    linear-gradient(180deg, rgba(14, 11, 8, 1), rgba(9, 8, 6, 1));
+    linear-gradient(180deg, rgba(7, 11, 19, 1), rgba(6, 10, 17, 1));
   --site-grid-minor: rgba(240, 188, 75, 0.05);
   --site-grid-major: rgba(240, 188, 75, 0.085);
   --site-grid-well-half: 640px;
   --site-grid-well-fade: 180px;
-  --site-panel-bg: rgba(24, 18, 11, 0.8);
+  --site-panel-bg: rgba(13, 19, 31, 0.8);
   --site-panel-border: rgba(148, 163, 184, 0.14);
   --site-panel-shadow: 0 18px 36px rgba(0, 0, 0, 0.28);
   --site-card-surface:
-    linear-gradient(180deg, rgba(20, 16, 11, 0.78), rgba(15, 12, 9, 0.72));
+    linear-gradient(180deg, rgba(8, 12, 18, 0.76), rgba(9, 13, 20, 0.72));
   --site-card-border: rgba(148, 163, 184, 0.08);
   --site-card-shadow: 0 14px 26px rgba(0, 0, 0, 0.18);
   --site-band-edge: rgba(148, 163, 184, 0.08);
   --site-doc-gradient:
-    radial-gradient(circle at top left, rgba(240, 188, 75, 0.08), transparent 34%),
-    linear-gradient(180deg, rgba(14, 11, 8, 0.99), rgba(9, 8, 6, 0.99));
+    radial-gradient(circle at top left, rgba(125, 211, 252, 0.08), transparent 34%),
+    linear-gradient(180deg, rgba(7, 11, 19, 0.99), rgba(6, 10, 17, 0.99));
+  --site-page-gradient:
+    radial-gradient(960px 960px at top left, rgba(240, 188, 75, 0.14), transparent 72%),
+    linear-gradient(180deg, rgba(7, 13, 23, 0.98), rgba(8, 12, 21, 0.98) 18rem, rgba(6, 10, 17, 0.99) 34rem);
   --site-topbar-border: rgba(148, 163, 184, 0.12);
   --site-topbar-shadow: 0 16px 34px rgba(0, 0, 0, 0.34);
   --site-topbar-gradient:
-    radial-gradient(circle at top left, rgba(240, 188, 75, 0.14), transparent 34%),
-    linear-gradient(135deg, rgba(14, 11, 8, 0.95), rgba(17, 13, 9, 0.94) 52%, rgba(10, 8, 6, 0.96));
+    radial-gradient(circle at top left, rgba(240, 188, 75, 0.13), transparent 34%),
+    linear-gradient(135deg, rgba(6, 10, 18, 0.95), rgba(8, 14, 24, 0.94) 52%, rgba(5, 8, 15, 0.96));
   --site-hero-gradient:
     radial-gradient(circle at top left, rgba(217, 154, 26, 0.12), transparent 36%),
-    linear-gradient(180deg, rgba(16, 12, 8, 0.97), rgba(14, 11, 8, 0.98) 34%, rgba(10, 8, 6, 0.99));
+    linear-gradient(180deg, rgba(7, 13, 23, 0.97), rgba(8, 12, 21, 0.98) 34%, rgba(6, 9, 16, 0.99));
   --vp-home-hero-name-background: linear-gradient(135deg, #f8fafc 10%, #f5d37d 50%, #f0bc4b 100%);
+  --vp-home-hero-image-background-image: radial-gradient(circle at top, rgba(240, 188, 75, 0.32), rgba(217, 154, 26, 0.08) 60%);
 }
 
 body,
@@ -172,7 +179,7 @@ body,
 
 .VPDoc {
   position: relative;
-  background: var(--site-doc-gradient);
+  background: var(--site-page-gradient);
   border-top: 1px solid var(--site-band-edge);
   overflow: hidden;
 }
@@ -184,6 +191,10 @@ body,
 .VPDoc .curtain {
   position: relative;
   z-index: 1;
+}
+
+.VPDoc .aside-curtain {
+  display: none;
 }
 
 .site-band-hero {
@@ -208,7 +219,7 @@ body,
 
 .site-band-contact {
   background:
-    radial-gradient(circle at bottom right, rgba(217, 161, 43, 0.08), transparent 34%),
+    radial-gradient(circle at bottom right, rgba(245, 179, 52, 0.12), transparent 34%),
     linear-gradient(180deg, rgba(248, 250, 252, 0.9), rgba(255, 255, 255, 0.98));
 }
 
@@ -216,13 +227,13 @@ body,
 .dark .site-band-projects,
 .dark .site-band-story {
   background:
-    linear-gradient(180deg, rgba(14, 11, 8, 0.99), rgba(9, 8, 6, 0.99));
+    linear-gradient(180deg, rgba(7, 11, 19, 0.99), rgba(6, 10, 17, 0.99));
 }
 
 .dark .site-band-contact {
   background:
-    radial-gradient(circle at bottom right, rgba(240, 188, 75, 0.08), transparent 34%),
-    linear-gradient(180deg, rgba(14, 11, 8, 0.99), rgba(9, 8, 6, 0.99));
+    radial-gradient(circle at bottom right, rgba(240, 188, 75, 0.12), transparent 34%),
+    linear-gradient(180deg, rgba(7, 11, 19, 0.99), rgba(6, 10, 17, 0.99));
 }
 
 .site-shell {
@@ -360,7 +371,7 @@ body,
 }
 
 .dark .site-tech-chip {
-  background: rgba(22, 17, 11, 0.58);
+  background: rgba(9, 14, 24, 0.58);
 }
 
 .site-tech-chip-icon {
@@ -404,7 +415,7 @@ body,
 }
 
 .dark .site-link-pill.secondary {
-  background: rgba(22, 17, 11, 0.58);
+  background: rgba(9, 14, 24, 0.58);
 }
 
 .site-stack-list,
@@ -702,7 +713,7 @@ body,
 }
 
 .dark .site-tech-chip-muted {
-  background: rgba(22, 17, 11, 0.66);
+  background: rgba(11, 16, 26, 0.66);
 }
 
 .VPNavBarTitle .title > span {
@@ -837,7 +848,7 @@ body,
 
 .dark .VPLocalNav {
   background:
-    linear-gradient(180deg, rgba(16, 12, 8, 0.9), rgba(16, 12, 8, 0.82)) !important;
+    linear-gradient(180deg, rgba(7, 13, 23, 0.9), rgba(7, 13, 23, 0.82)) !important;
 }
 
 @media (max-width: 960px) {
