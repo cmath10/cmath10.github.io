@@ -25,6 +25,7 @@ export default defineConfig({
       title: 'Kirill Zaitsev',
       description: 'Personal website about Vue, TypeScript, tooling and library design.',
       themeConfig: {
+        outlineTitle: 'On this page',
         nav: [
           { text: 'About', link: '/about' },
           { text: 'Philosophy', link: '/philosophy' },
@@ -41,6 +42,7 @@ export default defineConfig({
       title: 'Кирилл Зайцев',
       description: 'Личный сайт о Vue, TypeScript, tooling и проектировании библиотек.',
       themeConfig: {
+        outlineTitle: 'На этой странице',
         nav: [
           { text: 'Обо мне', link: '/ru/about' },
           { text: 'Подход', link: '/ru/philosophy' },
