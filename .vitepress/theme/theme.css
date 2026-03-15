@@ -47,33 +47,33 @@
   --vp-c-text-1: rgba(244, 247, 251, 0.96);
   --vp-c-text-2: rgba(224, 231, 239, 0.82);
   --site-body-bg:
-    linear-gradient(180deg, rgba(7, 11, 19, 1), rgba(6, 10, 17, 1));
+    linear-gradient(180deg, rgba(12, 13, 16, 1), rgba(10, 11, 14, 1));
   --site-grid-minor: rgba(240, 188, 75, 0.05);
   --site-grid-major: rgba(240, 188, 75, 0.085);
   --site-grid-well-half: 640px;
   --site-grid-well-fade: 180px;
-  --site-panel-bg: rgba(13, 19, 31, 0.8);
+  --site-panel-bg: rgba(20, 21, 26, 0.82);
   --site-panel-border: rgba(148, 163, 184, 0.14);
   --site-panel-shadow: 0 18px 36px rgba(0, 0, 0, 0.28);
   --site-card-surface:
-    linear-gradient(180deg, rgba(8, 12, 18, 0.76), rgba(9, 13, 20, 0.72));
+    linear-gradient(180deg, rgba(16, 17, 21, 0.76), rgba(14, 15, 19, 0.72));
   --site-card-border: rgba(148, 163, 184, 0.08);
   --site-card-shadow: 0 14px 26px rgba(0, 0, 0, 0.18);
   --site-band-edge: rgba(148, 163, 184, 0.08);
   --site-doc-gradient:
-    radial-gradient(circle at top left, rgba(125, 211, 252, 0.08), transparent 34%),
-    linear-gradient(180deg, rgba(7, 11, 19, 0.99), rgba(6, 10, 17, 0.99));
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.035), transparent 34%),
+    linear-gradient(180deg, rgba(12, 13, 16, 0.99), rgba(10, 11, 14, 0.99));
   --site-page-gradient:
     radial-gradient(960px 960px at top left, rgba(240, 188, 75, 0.14), transparent 72%),
-    linear-gradient(180deg, rgba(7, 13, 23, 0.98), rgba(8, 12, 21, 0.98) 18rem, rgba(6, 10, 17, 0.99) 34rem);
+    linear-gradient(180deg, rgba(16, 17, 21, 0.98), rgba(14, 15, 19, 0.98) 18rem, rgba(10, 11, 14, 0.99) 34rem);
   --site-topbar-border: rgba(148, 163, 184, 0.12);
   --site-topbar-shadow: 0 16px 34px rgba(0, 0, 0, 0.34);
   --site-topbar-gradient:
     radial-gradient(circle at top left, rgba(240, 188, 75, 0.13), transparent 34%),
-    linear-gradient(135deg, rgba(6, 10, 18, 0.95), rgba(8, 14, 24, 0.94) 52%, rgba(5, 8, 15, 0.96));
+    linear-gradient(135deg, rgba(14, 15, 19, 0.95), rgba(17, 18, 22, 0.94) 52%, rgba(11, 12, 16, 0.96));
   --site-hero-gradient:
     radial-gradient(circle at top left, rgba(217, 154, 26, 0.12), transparent 36%),
-    linear-gradient(180deg, rgba(7, 13, 23, 0.97), rgba(8, 12, 21, 0.98) 34%, rgba(6, 9, 16, 0.99));
+    linear-gradient(180deg, rgba(18, 19, 23, 0.97), rgba(15, 16, 20, 0.98) 34%, rgba(11, 12, 16, 0.99));
   --vp-home-hero-name-background: linear-gradient(135deg, #f8fafc 10%, #f5d37d 50%, #f0bc4b 100%);
   --vp-home-hero-image-background-image: radial-gradient(circle at top, rgba(240, 188, 75, 0.32), rgba(217, 154, 26, 0.08) 60%);
 }
@@ -227,13 +227,13 @@ body,
 .dark .site-band-projects,
 .dark .site-band-story {
   background:
-    linear-gradient(180deg, rgba(7, 11, 19, 0.99), rgba(6, 10, 17, 0.99));
+    linear-gradient(180deg, rgba(12, 13, 16, 0.99), rgba(10, 11, 14, 0.99));
 }
 
 .dark .site-band-contact {
   background:
     radial-gradient(circle at bottom right, rgba(240, 188, 75, 0.12), transparent 34%),
-    linear-gradient(180deg, rgba(7, 11, 19, 0.99), rgba(6, 10, 17, 0.99));
+    linear-gradient(180deg, rgba(12, 13, 16, 0.99), rgba(10, 11, 14, 0.99));
 }
 
 .site-shell {
@@ -371,7 +371,7 @@ body,
 }
 
 .dark .site-tech-chip {
-  background: rgba(9, 14, 24, 0.58);
+  background: rgba(19, 20, 24, 0.58);
 }
 
 .site-tech-chip-icon {
@@ -415,7 +415,7 @@ body,
 }
 
 .dark .site-link-pill.secondary {
-  background: rgba(9, 14, 24, 0.58);
+  background: rgba(19, 20, 24, 0.58);
 }
 
 .site-stack-list,
@@ -713,7 +713,7 @@ body,
 }
 
 .dark .site-tech-chip-muted {
-  background: rgba(11, 16, 26, 0.66);
+  background: rgba(17, 18, 22, 0.66);
 }
 
 .VPNavBarTitle .title > span {
@@ -848,7 +848,7 @@ body,
 
 .dark .VPLocalNav {
   background:
-    linear-gradient(180deg, rgba(7, 13, 23, 0.9), rgba(7, 13, 23, 0.82)) !important;
+    linear-gradient(180deg, rgba(16, 17, 21, 0.9), rgba(14, 15, 19, 0.82)) !important;
 }
 
 @media (max-width: 960px) {
