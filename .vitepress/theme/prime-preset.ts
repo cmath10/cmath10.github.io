@@ -4,17 +4,17 @@ import Aura from '@primeuix/themes/aura'
 export const cMathPreset = definePreset(Aura, {
   semantic: {
     primary: {
-      50: '{cyan.50}',
-      100: '{cyan.100}',
-      200: '{cyan.200}',
-      300: '{cyan.300}',
-      400: '{cyan.400}',
-      500: '{cyan.500}',
-      600: '{cyan.600}',
-      700: '{cyan.700}',
-      800: '{cyan.800}',
-      900: '{cyan.900}',
-      950: '{cyan.950}'
+      50: '{sky.50}',
+      100: '{sky.100}',
+      200: '{sky.200}',
+      300: '{sky.300}',
+      400: '{sky.400}',
+      500: '{sky.500}',
+      600: '{sky.600}',
+      700: '{sky.700}',
+      800: '{sky.800}',
+      900: '{sky.900}',
+      950: '{sky.950}'
     },
     colorScheme: {
       light: {
@@ -51,14 +51,14 @@ export const cMathPreset = definePreset(Aura, {
       },
       dark: {
         primary: {
-          color: '{primary.400}',
+          color: '{primary.300}',
           inverseColor: '{surface.950}',
-          hoverColor: '{primary.300}',
-          activeColor: '{primary.200}'
+          hoverColor: '{primary.200}',
+          activeColor: '{primary.100}'
         },
         highlight: {
-          background: 'rgba(34, 211, 238, 0.16)',
-          focusBackground: 'rgba(34, 211, 238, 0.24)',
+          background: 'rgba(96, 165, 250, 0.16)',
+          focusBackground: 'rgba(96, 165, 250, 0.24)',
           color: 'rgba(226, 232, 240, 0.96)',
           focusColor: '#ffffff'
         },
