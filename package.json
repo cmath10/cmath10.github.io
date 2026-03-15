@@ -1,0 +1,27 @@
+{
+  "name": "cmath10-site",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "dev": "vitepress dev .",
+    "build": "vitepress build .",
+    "preview": "vitepress preview .",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui"
+  },
+  "dependencies": {
+    "@primeuix/themes": "2.0.3",
+    "primeicons": "7.0.0",
+    "primevue": "4.5.4",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@iconify-json/simple-icons": "1.2.73",
+    "@playwright/test": "^1.58.2",
+    "unplugin-icons": "23.0.1",
+    "vitepress": "1.6.4"
+  }
+}

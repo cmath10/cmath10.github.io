@@ -1,0 +1,37 @@
+name: cmath10
+
+x-node-common: &node-common
+  build:
+    context: .
+    dockerfile: docker/dev/Dockerfile
+  user: "${UID:-1000}:${GID:-1000}"
+  working_dir: /project
+  volumes:
+    - ./:/project
+
+services:
+  site:
+    <<: *node-common
+    command: >
+      sh -lc "pnpm install &&
+      pnpm dev --host 0.0.0.0 --port 5173"
+    labels:
+      traefik.port: 5173
+      traefik.enable: 'true'
+      traefik.http.routers.cmath10-site.rule: 'HostRegexp(`cmath10.{[^.]+}`)'
+      traefik.http.routers.cmath10-site.priority: 1
+      traefik.http.routers.cmath10-site.service: cmath10-site
+      traefik.http.services.cmath10-site.loadbalancer.server.port: '5173'
+      dev.orbstack.domains: 'cmath10.local,cmath10.test'
+
+  playwright:
+    build:
+      context: .
+      dockerfile: docker/playwright/Dockerfile
+    user: "${UID:-1000}:${GID:-1000}"
+    working_dir: /app
+    volumes:
+      - ./:/app
+      - ./artifacts/playwright:/artifacts
+    environment:
+      HOME: /tmp/cmath10-playwright

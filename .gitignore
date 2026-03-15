@@ -1,0 +1,12 @@
+node_modules/
+.pnpm-store/
+
+.idea/
+
+.vitepress/cache/
+.vitepress/dist/
+
+artifacts/
+
+playwright-report/
+test-results/
