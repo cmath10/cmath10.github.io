@@ -9,6 +9,8 @@
   --site-grid-minor: rgba(8, 145, 178, 0.07);
   --site-grid-major: rgba(8, 145, 178, 0.11);
   --site-shell-max: 1200px;
+  --site-grid-well-half: 640px;
+  --site-grid-well-fade: 180px;
   --site-panel-bg: rgba(255, 255, 255, 0.78);
   --site-panel-border: rgba(15, 23, 42, 0.08);
   --site-panel-shadow: 0 18px 36px rgba(15, 23, 42, 0.08);
@@ -45,6 +47,8 @@
     linear-gradient(180deg, rgba(7, 11, 19, 1), rgba(6, 10, 17, 1));
   --site-grid-minor: rgba(103, 232, 249, 0.06);
   --site-grid-major: rgba(103, 232, 249, 0.095);
+  --site-grid-well-half: 640px;
+  --site-grid-well-fade: 180px;
   --site-panel-bg: rgba(13, 19, 31, 0.8);
   --site-panel-border: rgba(148, 163, 184, 0.14);
   --site-panel-shadow: 0 18px 36px rgba(0, 0, 0, 0.28);
@@ -100,7 +104,8 @@ body,
 
 .site-band::before,
 .VPNavBar::before,
-.VPLocalNav::before {
+.VPLocalNav::before,
+.VPDoc::before {
   content: '';
   position: absolute;
   inset: 0;
@@ -114,6 +119,44 @@ body,
   background-size: 30px 30px, 30px 30px, 150px 150px, 150px 150px;
   background-position: top left;
   opacity: 0.65;
+}
+
+.site-band::before,
+.VPDoc::before,
+.VPNavBar::before,
+.VPLocalNav::before {
+  -webkit-mask-image: linear-gradient(
+    to right,
+    #000 0%,
+    #000 calc(50% - (var(--site-grid-well-half) + var(--site-grid-well-fade))),
+    rgba(0, 0, 0, 0.9) calc(50% - (var(--site-grid-well-half) + (var(--site-grid-well-fade) * 0.7))),
+    rgba(0, 0, 0, 0.65) calc(50% - (var(--site-grid-well-half) + (var(--site-grid-well-fade) * 0.4))),
+    rgba(0, 0, 0, 0.24) calc(50% - (var(--site-grid-well-half) + (var(--site-grid-well-fade) * 0.15))),
+    rgba(0, 0, 0, 0.12) calc(50% - var(--site-grid-well-half)),
+    rgba(0, 0, 0, 0.1) 50%,
+    rgba(0, 0, 0, 0.12) calc(50% + var(--site-grid-well-half)),
+    rgba(0, 0, 0, 0.24) calc(50% + (var(--site-grid-well-half) + (var(--site-grid-well-fade) * 0.15))),
+    rgba(0, 0, 0, 0.65) calc(50% + (var(--site-grid-well-half) + (var(--site-grid-well-fade) * 0.4))),
+    rgba(0, 0, 0, 0.9) calc(50% + (var(--site-grid-well-half) + (var(--site-grid-well-fade) * 0.7))),
+    #000 calc(50% + (var(--site-grid-well-half) + var(--site-grid-well-fade))),
+    #000 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    #000 0%,
+    #000 calc(50% - (var(--site-grid-well-half) + var(--site-grid-well-fade))),
+    rgba(0, 0, 0, 0.9) calc(50% - (var(--site-grid-well-half) + (var(--site-grid-well-fade) * 0.7))),
+    rgba(0, 0, 0, 0.65) calc(50% - (var(--site-grid-well-half) + (var(--site-grid-well-fade) * 0.4))),
+    rgba(0, 0, 0, 0.24) calc(50% - (var(--site-grid-well-half) + (var(--site-grid-well-fade) * 0.15))),
+    rgba(0, 0, 0, 0.12) calc(50% - var(--site-grid-well-half)),
+    rgba(0, 0, 0, 0.1) 50%,
+    rgba(0, 0, 0, 0.12) calc(50% + var(--site-grid-well-half)),
+    rgba(0, 0, 0, 0.24) calc(50% + (var(--site-grid-well-half) + (var(--site-grid-well-fade) * 0.15))),
+    rgba(0, 0, 0, 0.65) calc(50% + (var(--site-grid-well-half) + (var(--site-grid-well-fade) * 0.4))),
+    rgba(0, 0, 0, 0.9) calc(50% + (var(--site-grid-well-half) + (var(--site-grid-well-fade) * 0.7))),
+    #000 calc(50% + (var(--site-grid-well-half) + var(--site-grid-well-fade))),
+    #000 100%
+  );
 }
 
 .site-band > .site-shell,
@@ -132,22 +175,6 @@ body,
   background: var(--site-doc-gradient);
   border-top: 1px solid var(--site-band-edge);
   overflow: hidden;
-}
-
-.VPDoc::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  z-index: 0;
-  background-image:
-    linear-gradient(to right, var(--site-grid-minor) 1px, transparent 1px),
-    linear-gradient(to bottom, var(--site-grid-minor) 1px, transparent 1px),
-    linear-gradient(to right, var(--site-grid-major) 1px, transparent 1px),
-    linear-gradient(to bottom, var(--site-grid-major) 1px, transparent 1px);
-  background-size: 30px 30px, 30px 30px, 150px 150px, 150px 150px;
-  background-position: top left;
-  opacity: 0.65;
 }
 
 .VPDoc .container,
@@ -651,6 +678,10 @@ body,
   display: none;
 }
 
+.VPNavBarTitle .title {
+  width: auto;
+}
+
 .VPNavBarTitle .logo {
   width: 30px;
   height: 30px;
@@ -683,16 +714,86 @@ body,
   background: transparent;
 }
 
-@media (min-width: 961px) {
-  .VPNavBar .content-body {
+@media (min-width: 1440px) {
+  .VPNavBar .container {
     position: relative;
-    justify-content: flex-end;
+    max-width: none;
+  }
+
+  .VPNavBar .container > .title {
+    position: absolute;
+    top: 0;
+    left: 16px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    width: 42px;
+    height: var(--vp-nav-height);
+  }
+
+  .VPNavBar .content {
+    width: 100%;
+  }
+
+  .VPNavBar .content-body {
+    width: min(var(--site-shell-max), calc(100vw - 64px));
+    margin: 0 auto;
+    justify-content: flex-start;
+  }
+
+  .VPNavBar .search {
+    display: none !important;
   }
 
   .VPNavBarMenu {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    position: relative;
+    left: auto;
+    transform: none;
+    margin-left: -10px;
+    margin-right: auto;
+  }
+
+  .VPNavBar .translations {
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 961px) and (max-width: 1439px) {
+  .VPNavBar .container {
+    display: flex;
+    align-items: center;
+  }
+
+  .VPNavBar .container > .title {
+    position: static;
+    left: auto;
+    width: auto;
+    margin-right: 18px;
+  }
+
+  .VPNavBar .content {
+    width: auto;
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .VPNavBar .content-body {
+    width: 100%;
+    margin: 0;
+    justify-content: flex-start;
+  }
+
+  .VPNavBar .search {
+    display: none !important;
+  }
+
+  .VPNavBarMenu {
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  .VPNavBar .translations {
+    margin-left: auto;
   }
 }
 
@@ -709,6 +810,12 @@ body,
 }
 
 @media (max-width: 960px) {
+  :root,
+  .dark {
+    --site-grid-well-half: 360px;
+    --site-grid-well-fade: 120px;
+  }
+
   .site-shell {
     width: min(var(--site-shell-max), calc(100vw - 32px));
   }
