@@ -11,7 +11,11 @@ outline: deep
 
 ### @omnicajs/vue-remote
 
-Репозиторий: [`omnicajs/vue-remote`](https://github.com/omnicajs/vue-remote)
+<ProjectMetaLinks
+  href="https://github.com/omnicajs/vue-remote"
+  label="omnicajs/vue-remote"
+  npm-package="@omnicajs/vue-remote"
+/>
 
 Это самый явный публичный пример работы вокруг сторонних UI-расширений, границ изоляции и scaffolding для недоверенного или отдельно разрабатываемого интерфейсного кода. Этот пакет хорошо показывает архитектурную сторону профиля, потому что речь идет не просто об очередной UI-утилите, а о целой модели интеграции.
 
@@ -23,7 +27,11 @@ outline: deep
 
 ### @modulify/validator
 
-Репозиторий: [`modulify/validator`](https://github.com/modulify/validator)
+<ProjectMetaLinks
+  href="https://github.com/modulify/validator"
+  label="modulify/validator"
+  npm-package="@modulify/validator"
+/>
 
 Этот пакет показывает валидацию как переиспользуемую прикладную задачу, а не как узкий form-helper. Он хорошо поддерживает историю про проектирование библиотек вокруг правил, композиции и ясности API.
 
@@ -35,7 +43,11 @@ outline: deep
 
 ### @modulify/morph
 
-Репозиторий: [`modulify/morph`](https://github.com/modulify/morph)
+<ProjectMetaLinks
+  href="https://github.com/modulify/morph"
+  label="modulify/morph"
+  npm-package="@modulify/morph"
+/>
 
 Этот проект хорошо подходит для разговора о преобразовании и reshaping структур данных. Это компактный и понятный пример utility-дизайна с четкой границей абстракции.
 
@@ -47,7 +59,11 @@ outline: deep
 
 ### @cmath10/jmask
 
-Репозиторий: [`cmath10/jmask`](https://github.com/cmath10/jmask)
+<ProjectMetaLinks
+  href="https://github.com/cmath10/jmask"
+  label="cmath10/jmask"
+  npm-package="@cmath10/jmask"
+/>
 
 Это самый явно UI-ориентированный пакет в наборе. Он полезен для демонстрации практичной frontend-инженерии вокруг пользовательского ввода, браузерного поведения и переиспользуемых паттернов работы с формами.
 
@@ -59,13 +75,21 @@ outline: deep
 
 ### @modulify/pkg
 
-Репозиторий: [`modulify/pkg`](https://github.com/modulify/pkg)
+<ProjectMetaLinks
+  href="https://github.com/modulify/pkg"
+  label="modulify/pkg"
+  npm-package="@modulify/pkg"
+/>
 
 Этот пакет показывает интерес к package-oriented tooling и локальным workflow. Он помогает показать, что интерес к библиотекам продолжается и в package maintenance, а не ограничивается только runtime-кодом.
 
 ### @modulify/git-toolkit
 
-Репозиторий: [`modulify/git-toolkit`](https://github.com/modulify/git-toolkit)
+<ProjectMetaLinks
+  href="https://github.com/modulify/git-toolkit"
+  label="modulify/git-toolkit"
+  npm-package="@modulify/git-toolkit"
+/>
 
 Этот пакет хорошо показывает интерес к Git automation и tooling для мейнтейнеров, особенно если читать его рядом с release- и conventional-commit-направлением.
 
@@ -73,29 +97,41 @@ outline: deep
 
 ### modulify/conventional
 
-Репозиторий: [`modulify/conventional`](https://github.com/modulify/conventional)
+<ProjectMetaLinks
+  href="https://github.com/modulify/conventional"
+  label="modulify/conventional"
+/>
 
 Этот репозиторий поддерживает release-системную сторону профиля. Даже без большого количества текста вокруг него он усиливает тему автоматизации changelog, правил версионирования и повторяемого workflow мейнтейнера.
 
 ### modulify/m3-web
 
-Репозиторий: [`modulify/m3-web`](https://github.com/modulify/m3-web)
+<ProjectMetaLinks
+  href="https://github.com/modulify/m3-web"
+  label="modulify/m3-web"
+/>
 
 Это полезный supporting piece для UI-system work внутри более широкой экосистемы modulify. Он добавляет к Projects еще один сигнал, что публичная работа не ограничивается только pure utility libraries.
 
 ## Контекст организаций
 
-### modulify
+### <img src="/modulify-logo.svg" alt="Логотип modulify" class="project-org-heading-icon" /> modulify
 
-Организация: [`github.com/modulify`](https://github.com/modulify)
+<ProjectMetaLinks
+  href="https://github.com/modulify"
+  label="github.com/modulify"
+/>
 
-Если смотреть на публичную страницу организации, modulify сейчас выглядит как небольшая экосистема TypeScript-ориентированных репозиториев вокруг validation, преобразования данных, package tooling, Git helpers, release conventions и UI work. Это важный контекст, потому что публичная работа читается не как набор разрозненных экспериментов, а как развивающаяся линейка библиотек и tooling.
+modulify — это мой собственный зонтичный проект. Я развиваю его в основном сам, иногда с небольшой помощью коллег в нерабочее время, если им интересно поучаствовать в каком-то из направлений. Под этим именем я собираю библиотеки самого разного назначения: general-purpose пакеты, tooling, UI-системы вроде `m3-web`, а со временем и backend-направления. Текущий JavaScript- и TypeScript-слой для меня только первая оформленная часть этой более широкой идеи. Логотип для него нарисовала моя сестра — 2D-художница, работающая под именем `JackHook`.
 
 ### omnicajs
 
-Организация: [`github.com/omnicajs`](https://github.com/omnicajs)
+<ProjectMetaLinks
+  href="https://github.com/omnicajs"
+  label="github.com/omnicajs"
+/>
 
-Публично omnicajs сейчас сильнее всего связан с `vue-remote`. Даже этого одного видимого якоря уже достаточно, чтобы рамочно показать направление работы вокруг extension infrastructure, sandboxed UI composition и package development с заметной документационной составляющей.
+omnicajs связан с моим текущим местом работы, но не завязан на один конкретный CRM-продукт. Это место, куда мы выносим библиотеки и tooling для разработки web-интерфейсов, когда они действительно кросспродуктовые и должны оставаться пригодными не только внутри одного приложения. Поэтому именно там логично держать переиспользуемую extension infrastructure, примитивы UI-композиции и инструменты разработки, которые хочется применять где угодно, где они окажутся полезны.
 
 ## Что эти проекты должны сообщать
 

@@ -11,6 +11,7 @@ import ContactStrip from './components/ContactStrip.vue'
 import FeaturedProjects from './components/FeaturedProjects.vue'
 import FocusAreas from './components/FocusAreas.vue'
 import HomeHero from './components/HomeHero.vue'
+import ProjectMetaLinks from './components/ProjectMetaLinks.vue'
 import TimelineBlock from './components/TimelineBlock.vue'
 
 export default {
@@ -34,6 +35,7 @@ export default {
     app.component('FeaturedProjects', FeaturedProjects)
     app.component('FocusAreas', FocusAreas)
     app.component('HomeHero', HomeHero)
+    app.component('ProjectMetaLinks', ProjectMetaLinks)
     app.component('TimelineBlock', TimelineBlock)
   }
 } satisfies Theme
