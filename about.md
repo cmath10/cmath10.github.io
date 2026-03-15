@@ -5,25 +5,44 @@ outline: deep
 
 # About
 
-I am a software engineer with extensive experience building web applications and working across both frontend and backend concerns.
+I am a software engineer working primarily in web systems, frontend architecture and library design.
 
-My day-to-day work combines product delivery with infrastructure-minded engineering:
+The most accurate short description is probably this: I care about structure, but I do not romanticize it. I like systems that are clear, teachable and durable under real project pressure. I am usually less interested in impressive solutions than in solutions that remain readable six months later and still make sense to the next engineer touching them.
 
-- building interfaces with frameworks such as Vue and React
-- working with modern PHP stacks on the backend
-- using testing tools like Jest, Vitest and PHPUnit
-- creating solutions that respond to both business needs and technical constraints
+## How I tend to work
 
-## Engineering profile
+I usually approach engineering as a balancing act between clarity, momentum and long-term maintainability. I am comfortable starting with simple prototypes, but I also pay close attention to the moment when a system has grown enough to require firmer boundaries, cleaner abstractions or better tooling around it.
 
-One of the strongest recurring themes in my work is library design. A large part of that experience comes from commercial projects protected by NDAs, but the public side of it is also visible in several open-source packages and experiments. These projects reflect my preference for reusable abstractions, careful API design and maintainable implementation details.
+That means I often look for:
 
-I also bring DevOps habits into product work, not as a separate discipline but as a practical extension of engineering responsibility. That includes setting up development environments, improving local workflows and making it easier for teams to build, test and ship software with less friction.
+- where the real complexity of the problem actually lives
+- whether the current structure helps or hides understanding
+- when a shortcut is harmless and when it is already becoming expensive
+- how to keep a codebase workable for the people who will inherit it later
 
-## Design mindset
+## What repeatedly draws my attention
 
-I care deeply about software design and clean, maintainable code. Ideas such as SOLID and GRASP are part of how I evaluate structure and tradeoffs, but not as dogma. The goal is not theoretical purity. The goal is to choose designs that stay understandable, useful and proportionate to the problem at hand.
+Certain themes come up in my work again and again. I notice boundaries, dependency shape, API ergonomics, naming, changeability and adoption cost. I tend to think not only about whether something works, but also about how it will be understood, extended, tested and explained.
 
-That also means knowing when not to overengineer. Strong abstractions matter, but so do deadlines, product priorities and the reality that sometimes the best solution is the one that moves the business forward without accumulating unnecessary complexity.
+This is one of the reasons I am drawn to libraries, extension systems and shared engineering tools. Those areas force a more explicit style of thinking. They make vague design decisions visible very quickly.
 
-Public open-source work, package groupings and organization context are collected on the Projects page.
+## Engineering temperament
+
+I am not especially dogmatic, but I am precise. I care about calling things by their proper names, separating adjacent ideas that are not actually identical and avoiding conceptual shortcuts that make discussion easier in the moment but harder later.
+
+In practice, that usually means:
+
+- I do not treat old code, technical debt and controversial decisions as the same category
+- I do not treat duplication and bad abstraction as equivalent problems
+- I do not assume that simplicity means the absence of structure
+- I do not assume that more architecture is automatically better architecture
+
+I prefer decisions that can be explained plainly, defended under constraint and maintained without mythology.
+
+## Working with others
+
+I value environments where engineering is communicative rather than theatrical. I like writing code that can survive handoff, reviews that improve the system instead of performing expertise and workflows that make quality easier to sustain.
+
+I tend to bring a platform mindset even into product work: local tooling, testing ergonomics, documentation and developer experience matter to me because they shape how a team actually moves.
+
+If you want the more explicit version of how I think about design, tradeoffs and technical terms, those live on the [Philosophy](/philosophy) and [Glossary](/glossary) pages. Public packages, organizations and open-source work are collected on the [Projects](/projects) page.
