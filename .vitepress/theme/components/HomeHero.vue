@@ -4,6 +4,7 @@ import IconReact from '~icons/simple-icons/react'
 import IconTypescript from '~icons/simple-icons/typescript'
 import IconVitest from '~icons/simple-icons/vitest'
 import IconVue from '~icons/simple-icons/vuedotjs'
+import HeroLogoMark from './HeroLogoMark.vue'
 import { useSiteLocale } from '../useSiteLocale'
 
 const { t } = useSiteLocale()
@@ -52,7 +53,7 @@ const stack = [
         </div>
 
         <div class="site-hero-mark-frame">
-          <img class="site-hero-mark" src="/logo.svg" :alt="`${t.homeHero.title} logo`" />
+          <HeroLogoMark class="site-hero-mark" />
         </div>
       </div>
     </div>

@@ -266,20 +266,16 @@ body,
   display: block;
   width: 100%;
   height: auto;
+  color: #05070b;
+}
+
+.dark .site-hero-mark {
+  color: #f8fafc;
 }
 
 .site-hero-mark-frame {
-  width: clamp(220px, 18vw, 280px);
+  width: clamp(440px, 36vw, 560px);
   margin-left: auto;
-  border-radius: 28px;
-  background: rgba(255, 255, 255, 0.72);
-  border: 1px solid var(--site-panel-border);
-  box-shadow: var(--site-panel-shadow);
-  backdrop-filter: blur(12px);
-}
-
-.dark .site-hero-mark-frame {
-  background: rgba(248, 250, 252, 0.94);
 }
 
 .site-lead {
@@ -825,8 +821,7 @@ body,
   }
 
   .site-hero-mark-frame {
-    margin-left: 0;
-    margin-bottom: 0.5rem;
+    display: none;
   }
 
   .site-grid.cards-3,
