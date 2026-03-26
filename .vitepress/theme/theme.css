@@ -92,6 +92,30 @@ body,
   padding-top: 0;
 }
 
+.vp-doc h2 .header-anchor {
+  top: 0;
+}
+
+.about-photo-float {
+  float: left;
+  width: 160px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 24px;
+  border: 1px solid var(--site-panel-border);
+  box-shadow: var(--site-card-shadow);
+  margin: 20px 1.5rem 1rem 0;
+}
+
+@media (max-width: 640px) {
+  .about-photo-float {
+    float: none;
+    display: block;
+    width: 144px;
+    margin: 0 0 1rem;
+  }
+}
+
 .glossary-acronym {
   font-weight: 700;
   letter-spacing: 0.01em;
@@ -717,12 +741,28 @@ body,
   background: rgba(17, 18, 22, 0.66);
 }
 
-.VPNavBarTitle .title > span {
+.VPNavBarTitle .title > span:not(.site-nav-home-label) {
   display: none;
 }
 
 .VPNavBarTitle .title {
   width: auto;
+}
+
+.site-nav-home-label {
+  display: none;
+  margin-left: 0.55rem;
+  color: var(--vp-c-text-2);
+  font-size: 0.92rem;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.VPNavBarTitle .title:hover .site-nav-home-label,
+.VPNavBarTitle .title:focus-visible .site-nav-home-label {
+  color: var(--vp-c-text-1);
 }
 
 .VPNavBarTitle .logo {
@@ -758,6 +798,11 @@ body,
 }
 
 @media (min-width: 1440px) {
+  .site-nav-home-label {
+    display: inline-flex;
+    align-items: center;
+  }
+
   .VPNavBar .container {
     position: relative;
     max-width: none;
@@ -770,7 +815,7 @@ body,
     z-index: 2;
     display: flex;
     align-items: center;
-    width: 42px;
+    width: auto;
     height: var(--vp-nav-height);
   }
 
@@ -784,6 +829,11 @@ body,
     justify-content: flex-start;
   }
 
+  .VPNavBar .container:has(.site-nav-home-label) .content-body {
+    padding-left: 112px;
+    box-sizing: border-box;
+  }
+
   .VPNavBar .search {
     display: none !important;
   }
@@ -794,6 +844,10 @@ body,
     transform: none;
     margin-left: -10px;
     margin-right: auto;
+  }
+
+  .VPNavBar .container:has(.site-nav-home-label) .VPNavBarMenu {
+    margin-left: 0;
   }
 
   .VPNavBar .translations {

@@ -11,11 +11,17 @@ import ContactStrip from './components/ContactStrip.vue'
 import FeaturedProjects from './components/FeaturedProjects.vue'
 import FocusAreas from './components/FocusAreas.vue'
 import HomeHero from './components/HomeHero.vue'
+import NavHomeLabel from './components/NavHomeLabel.vue'
 import ProjectMetaLinks from './components/ProjectMetaLinks.vue'
 import TimelineBlock from './components/TimelineBlock.vue'
+import { h } from 'vue'
 
 export default {
   extends: DefaultTheme,
+  Layout: () =>
+    h(DefaultTheme.Layout, null, {
+      'nav-bar-title-after': () => h(NavHomeLabel)
+    }),
   enhanceApp({ app }) {
     app.use(PrimeVue, {
       theme: {

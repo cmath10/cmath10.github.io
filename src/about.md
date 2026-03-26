@@ -5,6 +5,8 @@ outline: deep
 
 # About
 
+<img class="about-photo-float" src="/avatar.jpg" alt="Portrait of Kirill Zaitsev" />
+
 I am a software engineer working primarily in web systems, frontend architecture and library design.
 
 The most accurate short description is probably this: I care about structure, but I do not romanticize it. I like systems that are clear, teachable and durable under real project pressure. I am usually less interested in impressive solutions than in solutions that remain readable six months later and still make sense to the next engineer touching them.
@@ -46,3 +48,16 @@ I value environments where engineering is communicative rather than theatrical. 
 I tend to bring a platform mindset even into product work: local tooling, testing ergonomics, documentation and developer experience matter to me because they shape how a team actually moves.
 
 If you want the more explicit version of how I think about design, tradeoffs and technical terms, those live on the [Philosophy](/philosophy) and [Glossary](/glossary) pages. Public packages, organizations and open-source work are collected on the [Projects](/projects) page.
+
+## Books that tend to stay nearby
+
+Certain books return to my desk again and again because they help me recalibrate how I think about code, structure and design tradeoffs.
+
+- Robert C. Martin, especially *Clean Code: A Handbook of Agile Software Craftsmanship* and *Clean Architecture: A Craftsman's Guide to Software Structure and Design*
+- Martin Fowler, especially *Patterns of Enterprise Application Architecture*
+- Craig Larman, especially *Applying UML and Patterns: An Introduction to Object-Oriented Analysis and Design and Iterative Development*
+- Yegor Bugayenko, especially *Elegant Objects*
+
+I do not treat these books as doctrine, but I do treat them as useful lenses. They help me notice structure, responsibility, naming and design pressure earlier than I otherwise would.
+
+I do not absorb every recommendation from these authors unchanged. Some rules are useful as pressure and as a way to notice design problems, but not as laws. For example, I do not treat the idea that a function should never have more than three arguments as universal. Most of the time fewer arguments is better, but there are cases where four or five make the code clearer than the available alternatives.
