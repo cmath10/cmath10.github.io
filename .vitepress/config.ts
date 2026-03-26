@@ -14,6 +14,7 @@ function resolveBase() {
 export default defineConfig({
   title: 'Kirill Zaitsev',
   description: 'Personal website about Vue, TypeScript, tooling and library design.',
+  srcDir: 'src',
   base: resolveBase(),
   cleanUrls: true,
   lastUpdated: true,
