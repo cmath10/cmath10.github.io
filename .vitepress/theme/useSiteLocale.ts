@@ -5,9 +5,9 @@ const messages = {
   en: {
     homeHero: {
       title: 'Kirill Zaitsev',
-      subtitle: 'Software engineer focused on web applications, frontend systems, and libraries',
+      subtitle: 'Software engineer specializing in web applications and library development',
       lead:
-        'I build web applications across frontend and backend, with a strong interest in library design, practical architecture and development environments that help teams move faster while keeping design decisions aligned with real business constraints.',
+        'I build web applications and write both frontend and backend code. I am interested in library design and have extensive experience building libraries. I value practical architecture and comfortable engineering environments that help teams move faster without losing sight of the connection between technical decisions and real business needs.',
       github: 'GitHub profile',
       directionTitle: 'Current direction',
       directionItems: [
@@ -223,9 +223,9 @@ const messages = {
   ru: {
     homeHero: {
       title: 'Кирилл Зайцев',
-      subtitle: 'Инженер-программист, который занимается веб-приложениями, фронтенд-системами и библиотеками',
+      subtitle: 'Инженер программист, специализирующийся на web-приложениях и разработке библиотек',
       lead:
-        'Я разрабатываю веб-приложения на фронтенде и бэкенде. Больше всего меня интересуют проектирование библиотек, практичная архитектура и удобная инженерная среда, которая помогает командам двигаться быстрее и при этом не терять связь между техническими решениями и реальными задачами бизнеса.',
+        'Я разрабатываю web-приложения - пишу как frontend, так и backend код. Интересуюсь проектированием библиотек и имею большой опыт их разработки. Нравится практичная архитектура и удобная инженерная среда, которая помогает командам двигаться быстрее и при этом не терять связь между техническими решениями и реальными задачами бизнеса.',
       github: 'Профиль GitHub',
       directionTitle: 'Текущий фокус',
       directionItems: [
@@ -408,7 +408,7 @@ const messages = {
           companyHref: 'https://present-dv.ru/',
           role: 'Software Engineer',
           description:
-            'Стартовая точка моей карьеры в веб-разработке: поддерживал основной сайт компании, работал со статичной сеткой на frontend и backend-кодом на Yii, закладывая базу для дальнейшего движения в full-stack и frontend-системы.',
+            'Стартовая точка моей карьеры в web-разработке: поддерживал основной сайт компании, работал со статичной сеткой на frontend и backend-кодом на Yii, закладывая базу для дальнейшего движения в full-stack и frontend-системы.',
           skills: ['PHP', 'MySQL', 'HTML5', 'CSS', 'JavaScript', 'Git', 'jQuery', 'OOP']
         }
       ]

@@ -16,6 +16,9 @@ export default defineConfig({
   description: 'Personal website about Vue, TypeScript, tooling and library design.',
   srcDir: 'src',
   base: resolveBase(),
+  head: [
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }]
+  ],
   cleanUrls: true,
   lastUpdated: true,
   lang: 'en-US',
