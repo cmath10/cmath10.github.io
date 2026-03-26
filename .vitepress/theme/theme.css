@@ -792,15 +792,38 @@ body,
   backdrop-filter: blur(18px);
 }
 
+.VPNavScreen {
+  background:
+    radial-gradient(960px 960px at top left, rgba(245, 179, 52, 0.16), transparent 72%),
+    linear-gradient(180deg, rgb(245, 249, 253), rgb(248, 250, 252) 18rem, rgb(255, 255, 255) 34rem) !important;
+}
+
+.dark .VPNavScreen {
+  background:
+    radial-gradient(960px 960px at top left, rgba(240, 188, 75, 0.14), transparent 72%),
+    linear-gradient(180deg, rgb(16, 17, 21), rgb(14, 15, 19) 18rem, rgb(10, 11, 14) 34rem) !important;
+}
+
+.VPNavScreenAppearance {
+  background:
+    radial-gradient(720px 720px at bottom right, rgba(245, 179, 52, 0.14), transparent 70%),
+    linear-gradient(180deg, rgb(255, 255, 255), rgb(247, 249, 252) 18rem, rgb(242, 246, 250) 34rem) !important;
+}
+
+.dark .VPNavScreenAppearance {
+  background:
+    radial-gradient(720px 720px at bottom right, rgba(240, 188, 75, 0.12), transparent 70%),
+    linear-gradient(180deg, rgb(9, 10, 13), rgb(12, 13, 17) 18rem, rgb(16, 17, 21) 34rem) !important;
+}
+
 .VPNavBar .content-body,
 .VPNavBar .content {
   background: transparent;
 }
 
-@media (min-width: 1440px) {
-  .site-nav-home-label {
-    display: inline-flex;
-    align-items: center;
+@media (min-width: 1280px) {
+  .VPNavBar {
+    --site-nav-controls-offset: calc((100vw - var(--site-shell-max)) / 2 - 16px);
   }
 
   .VPNavBar .container {
@@ -827,11 +850,12 @@ body,
     width: min(var(--site-shell-max), calc(100vw - 64px));
     margin: 0 auto;
     justify-content: flex-start;
+    padding-left: 52px;
+    box-sizing: border-box;
   }
 
   .VPNavBar .container:has(.site-nav-home-label) .content-body {
     padding-left: 112px;
-    box-sizing: border-box;
   }
 
   .VPNavBar .search {
@@ -850,12 +874,37 @@ body,
     margin-left: 0;
   }
 
+  .VPNavBar .menu + .translations::before {
+    display: none;
+  }
+
+  .VPNavBar .menu + .translations {
+    margin-left: 18px;
+  }
+
   .VPNavBar .translations {
     margin-left: auto;
   }
+
+  .VPNavBar .translations,
+  .VPNavBar .appearance,
+  .VPNavBar .social-links {
+    transform: translateX(var(--site-nav-controls-offset));
+  }
+
+  .VPNavBar .social-links {
+    margin-right: 0;
+  }
 }
 
-@media (min-width: 961px) and (max-width: 1439px) {
+@media (min-width: 1440px) {
+  .site-nav-home-label {
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: 961px) and (max-width: 1279px) {
   .VPNavBar .container {
     display: flex;
     align-items: center;
@@ -904,6 +953,25 @@ body,
 .dark .VPLocalNav {
   background:
     linear-gradient(180deg, rgba(16, 17, 21, 0.9), rgba(14, 15, 19, 0.82)) !important;
+}
+
+.VPLocalNavOutlineDropdown .items {
+  border-color: var(--site-topbar-border);
+  background:
+    radial-gradient(960px 960px at top left, rgba(245, 179, 52, 0.12), transparent 72%),
+    linear-gradient(180deg, rgb(247, 249, 252), rgb(244, 247, 251) 18rem, rgb(240, 244, 249) 34rem);
+  box-shadow: var(--site-panel-shadow);
+}
+
+.VPLocalNavOutlineDropdown .header,
+.VPLocalNavOutlineDropdown .outline {
+  background: transparent;
+}
+
+.dark .VPLocalNavOutlineDropdown .items {
+  background:
+    radial-gradient(960px 960px at top left, rgba(240, 188, 75, 0.12), transparent 72%),
+    linear-gradient(180deg, rgb(16, 17, 21), rgb(11, 12, 16) 18rem, rgb(6, 7, 10) 34rem);
 }
 
 @media (max-width: 960px) {
