@@ -2,6 +2,7 @@ node_modules/
 .pnpm-store/
 
 .idea/
+.vscode/
 
 .vitepress/cache/
 .vitepress/dist/
