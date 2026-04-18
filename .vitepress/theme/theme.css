@@ -539,6 +539,67 @@ body,
   font-size: 0.95rem;
 }
 
+.site-note-list {
+  display: grid;
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.site-note-card {
+  padding: 1.35rem 1.4rem 1.25rem;
+  border-radius: 24px;
+  border: 1px solid var(--site-card-border);
+  background: var(--site-card-surface);
+  box-shadow: var(--site-card-shadow);
+  backdrop-filter: blur(18px);
+}
+
+.site-note-card-title {
+  margin: 0 0 0.65rem;
+  font-size: clamp(1.2rem, 1.6vw, 1.5rem);
+  line-height: 1.15;
+}
+
+.vp-doc .site-note-card-title {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.site-note-card-title a {
+  color: var(--vp-c-text-1);
+  text-decoration: none;
+}
+
+.site-note-card-title a:hover {
+  color: var(--vp-c-brand-1);
+}
+
+.site-note-card-summary {
+  margin: 0;
+  color: var(--vp-c-text-2);
+  line-height: 1.75;
+}
+
+.site-note-card-cta {
+  margin: 1rem 0 0;
+}
+
+.site-note-card-cta a {
+  display: inline-flex;
+  align-items: center;
+  color: var(--vp-c-brand-1);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.site-note-card-cta a:hover {
+  color: var(--vp-c-brand-2);
+}
+
+.site-note-card p:last-child {
+  margin-bottom: 0;
+}
+
 .site-footer {
   display: flex;
   flex-direction: column;
