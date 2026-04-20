@@ -911,7 +911,7 @@ body,
     width: min(var(--site-shell-max), calc(100vw - 64px));
     margin: 0 auto;
     justify-content: flex-start;
-    padding-left: 52px;
+    padding-left: 0;
     box-sizing: border-box;
   }
 
