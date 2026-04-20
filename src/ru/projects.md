@@ -33,7 +33,7 @@ outline: deep
   npm-package="@modulify/validator"
 />
 
-Этот пакет показывает валидацию как переиспользуемую прикладную задачу, а не как узкий form-helper. Он хорошо поддерживает историю про проектирование библиотек вокруг правил, композиции и ясности API.
+Этот пакет рассматривает валидацию как переиспользуемую прикладную задачу, а не как узкий form-helper. Он построен вокруг правил, композиции и ясности API.
 
 Что здесь особенно важно:
 
@@ -65,7 +65,7 @@ outline: deep
   npm-package="@cmath10/jmask"
 />
 
-Это самый явно UI-ориентированный пакет в наборе. Он полезен для демонстрации практичной frontend-инженерии вокруг пользовательского ввода, браузерного поведения и переиспользуемых паттернов работы с формами.
+Это самый явно UI-ориентированный пакет в наборе. Он посвящен практичной frontend-инженерии вокруг пользовательского ввода, браузерного поведения и переиспользуемых паттернов работы с формами.
 
 Что здесь особенно важно:
 
@@ -81,7 +81,7 @@ outline: deep
   npm-package="@modulify/pkg"
 />
 
-Этот пакет показывает интерес к package-oriented tooling и локальным workflow. Он помогает показать, что интерес к библиотекам продолжается и в package maintenance, а не ограничивается только runtime-кодом.
+Этот пакет посвящен package-oriented tooling и локальным workflow. Он продолжает библиотечную линию в сторону package maintenance и development ergonomics, а не только runtime-кода.
 
 ### @modulify/git-toolkit
 
@@ -91,9 +91,7 @@ outline: deep
   npm-package="@modulify/git-toolkit"
 />
 
-Этот пакет хорошо показывает интерес к Git automation и tooling для мейнтейнеров, особенно если читать его рядом с release- и conventional-commit-направлением.
-
-## Публичная ecosystem-work, которая еще не оформлена как основной пакетный акцент
+Этот пакет посвящен Git automation и tooling для мейнтейнеров, особенно рядом с release- и conventional-commit-направлением.
 
 ### modulify/conventional
 
@@ -102,7 +100,51 @@ outline: deep
   label="modulify/conventional"
 />
 
-Этот репозиторий поддерживает release-системную сторону профиля. Даже без большого количества текста вокруг него он усиливает тему автоматизации changelog, правил версионирования и повторяемого workflow мейнтейнера.
+Эта монорепа — набор release-system инструментов вокруг Conventional Commits. Она объединяет несколько более мелких пакетов для анализа git-истории, рекомендации версии, генерации changelog и оркестрации релиза.
+
+Опубликованные пакеты в этой монорепе:
+
+#### @modulify/conventional-git
+
+<ProjectMetaLinks
+  href="https://github.com/modulify/conventional"
+  label="@modulify/conventional-git"
+  npm-package="@modulify/conventional-git"
+/>
+
+Тонкая обертка над git с разбором conventional commits и вспомогательными утилитами для semantic tags.
+
+#### @modulify/conventional-bump
+
+<ProjectMetaLinks
+  href="https://github.com/modulify/conventional"
+  label="@modulify/conventional-bump"
+  npm-package="@modulify/conventional-bump"
+/>
+
+Пакет для рекомендации следующей semantic version на основе истории git.
+
+#### @modulify/conventional-changelog
+
+<ProjectMetaLinks
+  href="https://github.com/modulify/conventional"
+  label="@modulify/conventional-changelog"
+  npm-package="@modulify/conventional-changelog"
+/>
+
+Пакет для генерации changelog по git-истории и настраиваемым шаблонам.
+
+#### @modulify/conventional-release
+
+<ProjectMetaLinks
+  href="https://github.com/modulify/conventional"
+  label="@modulify/conventional-release"
+  npm-package="@modulify/conventional-release"
+/>
+
+Более высокоуровневый пакет оркестрации релиза, который связывает versioning, обновление changelog и release-коммиты в единый поток.
+
+## Публичная ecosystem-work, которая еще не оформлена как основной пакетный акцент
 
 ### modulify/m3-web
 
@@ -111,7 +153,7 @@ outline: deep
   label="modulify/m3-web"
 />
 
-Это полезный supporting piece для UI-system work внутри более широкой экосистемы modulify. Он добавляет к Projects еще один сигнал, что публичная работа не ограничивается только pure utility libraries.
+Это supporting piece для UI-system work внутри более широкой экосистемы modulify. Он добавляет к utility- и tooling-пакетам отдельный UI-слой.
 
 ## Контекст организаций
 
@@ -132,18 +174,3 @@ modulify — это мой собственный зонтичный проек�
 />
 
 omnicajs связан с моим текущим местом работы, но не завязан на один конкретный CRM-продукт. Это место, куда мы выносим библиотеки и tooling для разработки web-интерфейсов, когда они действительно кросспродуктовые и должны оставаться пригодными не только внутри одного приложения. Поэтому именно там логично держать переиспользуемую extension infrastructure, примитивы UI-композиции и инструменты разработки, которые хочется применять где угодно, где они окажутся полезны.
-
-## Что эти проекты должны сообщать
-
-- опыт создания переиспользуемых библиотек, а не только продуктовых фич
-- уверенность в проектировании API, документации и долгой поддержке
-- интерес к повторяющимся инженерным задачам и практичным абстракциям
-- умение балансировать между элегантностью решения и ограничениями реальной разработки
-
-## Хорошая структура описания для каждого проекта
-
-- какую проблему проект решает
-- почему вообще захотелось его построить
-- какие ограничения были по пути
-- какие компромиссы пришлось принять
-- что бы ты изменил в нем сегодня

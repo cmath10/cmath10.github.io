@@ -33,7 +33,7 @@ Good things to emphasize here:
   npm-package="@modulify/validator"
 />
 
-This package shows validation as a reusable application concern instead of a narrow form helper. It fits the story of designing libraries around rules, composition and API clarity.
+This package treats validation as a reusable application concern instead of a narrow form helper. It is built around rules, composition and API clarity.
 
 Good things to emphasize here:
 
@@ -49,7 +49,7 @@ Good things to emphasize here:
   npm-package="@modulify/morph"
 />
 
-This one is useful for highlighting transformations, mapping and reshaping of data structures. It reads as a compact example of utility design with a clear abstraction boundary.
+This package is about transformation, mapping and reshaping of data structures. It is a compact example of utility design with a clear abstraction boundary.
 
 Good things to emphasize here:
 
@@ -81,7 +81,7 @@ Good things to emphasize here:
   npm-package="@modulify/pkg"
 />
 
-This package points toward package-oriented tooling and local workflow support. It helps communicate that the interest in libraries extends into package maintenance and development ergonomics, not only runtime code.
+This package is about package-oriented tooling and local workflow support. It extends library work into package maintenance and development ergonomics, not only runtime code.
 
 ### @modulify/git-toolkit
 
@@ -91,9 +91,7 @@ This package points toward package-oriented tooling and local workflow support. 
   npm-package="@modulify/git-toolkit"
 />
 
-This package is a good signal of interest in Git automation and maintainers' tooling, especially when read together with release and conventional-commit work.
-
-## Public ecosystem work not yet framed as released packages
+This package is centered on Git automation and maintainers' tooling, especially alongside release and conventional-commit workflows.
 
 ### modulify/conventional
 
@@ -102,7 +100,51 @@ This package is a good signal of interest in Git automation and maintainers' too
   label="modulify/conventional"
 />
 
-This repo supports the release-systems angle of the profile. Even without a lot of prose around it yet, it reinforces interest in changelog automation, versioning rules and repeatable maintainer workflows.
+This monorepo is a release-systems toolkit built around Conventional Commits. It brings together several smaller packages that cover git history inspection, release recommendation, changelog generation and release orchestration.
+
+Published packages in this monorepo:
+
+#### @modulify/conventional-git
+
+<ProjectMetaLinks
+  href="https://github.com/modulify/conventional"
+  label="@modulify/conventional-git"
+  npm-package="@modulify/conventional-git"
+/>
+
+Thin wrapper over git with conventional-commit parsing and semantic tag helpers.
+
+#### @modulify/conventional-bump
+
+<ProjectMetaLinks
+  href="https://github.com/modulify/conventional"
+  label="@modulify/conventional-bump"
+  npm-package="@modulify/conventional-bump"
+/>
+
+Version recommendation package that suggests the next semantic version based on git history.
+
+#### @modulify/conventional-changelog
+
+<ProjectMetaLinks
+  href="https://github.com/modulify/conventional"
+  label="@modulify/conventional-changelog"
+  npm-package="@modulify/conventional-changelog"
+/>
+
+Changelog generation package built around git history and configurable templates.
+
+#### @modulify/conventional-release
+
+<ProjectMetaLinks
+  href="https://github.com/modulify/conventional"
+  label="@modulify/conventional-release"
+  npm-package="@modulify/conventional-release"
+/>
+
+Higher-level release orchestration package that ties versioning, changelog updates and release commits into one flow.
+
+## Public ecosystem work not yet framed as released packages
 
 ### modulify/m3-web
 
@@ -111,7 +153,7 @@ This repo supports the release-systems angle of the profile. Even without a lot 
   label="modulify/m3-web"
 />
 
-This looks like a useful supporting piece for UI-system work inside the broader modulify ecosystem. It gives the Projects page one more signal that the public work is not limited to pure utility libraries.
+This is a supporting piece for UI-system work inside the broader modulify ecosystem. It adds a UI-layer counterpart to the utility and tooling packages around it.
 
 ## Organization context
 
@@ -132,18 +174,3 @@ modulify is my own umbrella project. I develop it primarily on my own, with occa
 />
 
 omnicajs is tied to my current workplace, but it is not limited to one CRM-specific integration surface. It is where we move libraries and tooling for web-interface development when they are useful across products and worth keeping independent from a single application context. That makes it a better home for reusable extension infrastructure, UI composition primitives and developer tooling that should remain portable.
-
-## What these projects should communicate
-
-- experience building reusable libraries, not only product features
-- comfort with API shape, documentation and long-term maintainability
-- interest in solving recurring engineering problems with practical abstractions
-- ability to balance elegance with the constraints of real application work
-
-## Suggested structure per project
-
-- what problem the project solves
-- why you cared enough to build it
-- interesting constraints
-- design tradeoffs
-- what you would change today
