@@ -32,6 +32,7 @@ This file defines practical instructions for working in the `cmath10` repository
 - Primary package manager: `pnpm`
 - Local dev site: `docker compose` + Traefik/OrbStack domain routing
 - Default dev URL: `http://cmath10.test`
+- Prefer Make targets over direct `docker compose`; Make injects `HOST_UID`/`HOST_GID` so bind-mounted files are written as the current host user.
 
 ## Running Checks
 
@@ -50,7 +51,7 @@ make logs
 ```
 - Production build:
 ```bash
-pnpm build
+make build
 ```
 - Playwright tests:
 ```bash
@@ -68,9 +69,9 @@ make geom PLAYWRIGHT_GEOM_SCENARIO_FILE=recipes/geom/timeline.env
 ### Suggested Validation By Change Type
 - Markdown-only or copy-only changes:
   - usually no checks required
-  - run `pnpm build` if the change affects links, frontmatter, or page structure
+  - run `make build` if the change affects links, frontmatter, or page structure
 - Theme, layout, or component changes:
-  - run `pnpm build`
+  - run `make build`
   - run `make shot.home` when homepage visuals changed
   - run `make geom ...` when alignment or spacing is part of the task
 - Playwright, screenshot, or geometry workflow changes:

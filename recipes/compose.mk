@@ -1,7 +1,12 @@
-COMPOSE ?= docker compose
+HOST_UID ?= $(shell id -u)
+HOST_GID ?= $(shell id -g)
+COMPOSE ?= HOST_UID=$(HOST_UID) HOST_GID=$(HOST_GID) docker compose
 COMPOSE_SERVICE ?= site
 
-.PHONY: up up.d down logs shell docker.build
+.PHONY: build up up.d down logs shell docker.build
+
+build: ## Build the production site through Docker Compose
+	$(COMPOSE) run --rm $(COMPOSE_SERVICE) sh -lc 'pnpm install && pnpm build'
 
 up: ## Build and start the dev site service
 	$(COMPOSE) up --build $(COMPOSE_SERVICE)

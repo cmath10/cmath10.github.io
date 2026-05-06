@@ -207,7 +207,7 @@ Dark mode reveals theme inconsistency more aggressively than light mode.
 
 Recommended flow:
 
-1. `pnpm build`
+1. `make build`
 2. `make shot.home.dark`
 3. inspect the screenshot
 4. only then recheck light mode

@@ -4,7 +4,7 @@ x-node-common: &node-common
   build:
     context: .
     dockerfile: docker/dev/Dockerfile
-  user: "${UID:-1000}:${GID:-1000}"
+  user: "${HOST_UID:-1000}:${HOST_GID:-1000}"
   working_dir: /project
   volumes:
     - ./:/project
@@ -28,7 +28,7 @@ services:
     build:
       context: .
       dockerfile: docker/playwright/Dockerfile
-    user: "${UID:-1000}:${GID:-1000}"
+    user: "${HOST_UID:-1000}:${HOST_GID:-1000}"
     working_dir: /app
     volumes:
       - ./:/app
