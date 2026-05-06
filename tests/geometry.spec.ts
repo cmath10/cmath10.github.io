@@ -170,7 +170,7 @@ test('capture geometry report', async ({ page }) => {
       style.id = 'playwright-geometry-overlay'
       style.textContent = `
         .pw-geom-target {
-          outline: 1px dashed rgba(255, 0, 102, 0.9) !important;
+          outline: 1px dashed oklch(63.88% 0.2554 10.51 / 0.9) !important;
           outline-offset: 1px !important;
         }
         .pw-geom-center {
@@ -180,8 +180,8 @@ test('capture geometry report', async ({ page }) => {
           margin-left: -4px;
           margin-top: -4px;
           border-radius: 999px;
-          background: rgba(0, 200, 255, 0.95);
-          box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.9);
+          background: oklch(77.62% 0.1493 226.59 / 0.95);
+          box-shadow: 0 0 0 2px oklch(100% 0 0 / 0.9);
           pointer-events: none;
           z-index: 999999;
         }

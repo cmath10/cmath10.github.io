@@ -173,7 +173,7 @@ Notes:
 
 Search in `.vitepress/theme/theme.css` for:
 
-- `rgba(...)`
+- non-`oklch(...)` color literals
 - old accent families
 - old hardcoded color literals
 - component-specific dark backgrounds
@@ -218,7 +218,7 @@ Useful strategy:
 
 - search for old family names in the theme files
 - search for known old hex values
-- search for hardcoded `rgba(...)` accents
+- search for hardcoded non-`oklch(...)` accents
 
 Typical examples:
 

@@ -3,23 +3,23 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #e13856;
+        fill: oklch(60.56% 0.2038 16.23);
       }
 
       .cls-2 {
-        fill: #189efd;
+        fill: oklch(68.07% 0.1743 247.41);
       }
 
       .cls-3 {
-        fill: #ffb20f;
+        fill: oklch(81.63% 0.1686 77);
       }
 
       .cls-4 {
-        fill: #a812ee;
+        fill: oklch(56.86% 0.2807 309.71);
       }
 
       .cls-5 {
-        fill: #4ed208;
+        fill: oklch(76.02% 0.2382 139.07);
       }
     </style>
   </defs>
