@@ -38,7 +38,7 @@ const projects = computed(() => t.value.featuredProjects.items)
                   rounded
                 />
               </div>
-              <div class="site-inline-note">{{ t.featuredProjects.note }}</div>
+              <div class="site-inline-note">{{ project.note }}</div>
             </template>
           </PCard>
         </div>

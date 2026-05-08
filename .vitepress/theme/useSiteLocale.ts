@@ -18,53 +18,56 @@ const messages = {
     },
     focusAreas: {
       title: 'Focus Areas',
-      intro: 'This first draft is anchored in the themes that already show up across your public repos.',
+      intro: 'The recurring themes in my work are reusable interface infrastructure, typed tooling and release discipline.',
       items: [
         {
           title: 'Vue Infrastructure',
-          text: 'Reusable building blocks, remote rendering, flow-style UIs and integration patterns that fit real products.',
+          text: 'Interface platforms, extension boundaries and remote rendering patterns for products that need UI code to stay modular.',
           tags: ['Vue 3', 'Composition API', 'Rendering']
         },
         {
           title: 'TypeScript Tooling',
-          text: 'Packages that improve authoring, type-safety and release confidence for maintainers and frontend teams.',
+          text: 'Developer-facing packages that make shared code easier to author, validate and evolve across projects.',
           tags: ['TypeScript', 'Monorepos', 'DX']
         },
         {
           title: 'Release Systems',
-          text: 'Conventional commits, changelog automation, version strategy and the boring plumbing that keeps teams moving.',
+          text: 'Versioning, changelog generation and automation around the maintenance work that keeps libraries predictable.',
           tags: ['Git', 'Release', 'Automation']
         }
       ]
     },
     featuredProjects: {
       title: 'Selected Projects',
-      intro: 'Starter highlights pulled from your public work and nearby ecosystem repos.',
+      intro: 'A few public repositories that show how I approach reusable libraries, integration boundaries and maintenance tooling.',
       cta: 'See project notes',
-      note: 'These are good anchors for the public story because they show reusable engineering work rather than one-off product features.',
       items: [
         {
           name: 'vue-remote',
           href: 'https://github.com/omnicajs/vue-remote',
           summary: 'A scaffolding and integration tool for isolated sandbox-like UI extensions and remote rendering boundaries.',
+          note: 'The project sits close to platform work: isolation, delivery contracts and the ergonomics of building extensions safely.',
           tags: ['Remote UI', 'Architecture', 'Vue']
         },
         {
           name: 'modulify/validator',
           href: 'https://github.com/modulify/validator',
           summary: 'A general-purpose validation library shaped around reusable rule systems and application-level data checks.',
+          note: 'Its focus is not form decoration, but a small rules model that can be carried through application and integration code.',
           tags: ['Validation', 'Library', 'Data']
         },
         {
           name: 'modulify/morph',
           href: 'https://github.com/modulify/morph',
           summary: 'A utility for reshaping data structures, reflecting interest in transformations, composability and API clarity.',
+          note: 'This is the compact utility side of the same library work: clear boundaries around data shape conversion.',
           tags: ['Utilities', 'Transformations', 'OSS']
         },
         {
           name: 'jmask',
           href: 'https://github.com/cmath10/jmask',
           summary: 'A masking library for HTML inputs that reflects practical UI engineering and reusable form behavior.',
+          note: 'The package is deliberately close to product detail: input behavior, browser constraints and reusable UX primitives.',
           tags: ['Inputs', 'UX', 'OSS']
         }
       ]
@@ -236,53 +239,56 @@ const messages = {
     },
     focusAreas: {
       title: 'Основные направления',
-      intro: 'Этот первый набросок опирается на темы, которые уже хорошо видны по публичным репозиториям.',
+      intro: 'В моей работе чаще всего повторяются три темы: интерфейсная инфраструктура, типизированный tooling и дисциплина релизов.',
       items: [
         {
           title: 'Vue Infrastructure',
-          text: 'Переиспользуемые строительные блоки, remote rendering, flow-style интерфейсы и интеграционные паттерны, которые хорошо ложатся на реальные продукты.',
+          text: 'Интерфейсные платформы, границы расширений и remote rendering для продуктов, где UI-код должен оставаться модульным.',
           tags: ['Vue 3', 'Composition API', 'Rendering']
         },
         {
           title: 'TypeScript Tooling',
-          text: 'Пакеты, которые улучшают опыт разработки, типовую надежность и предсказуемость релизов для мейнтейнеров и frontend-команд.',
+          text: 'Инструменты для разработчиков, которые помогают писать, проверять и развивать общий код между проектами.',
           tags: ['TypeScript', 'Monorepos', 'DX']
         },
         {
           title: 'Release Systems',
-          text: 'Conventional commits, автоматизация changelog, стратегия версионирования и та самая скучная, но важная инженерная обвязка, которая удерживает процесс в порядке.',
+          text: 'Версионирование, changelog и автоматизация вокруг той части сопровождения, от которой зависит предсказуемость библиотек.',
           tags: ['Git', 'Release', 'Automation']
         }
       ]
     },
     featuredProjects: {
       title: 'Избранные проекты',
-      intro: 'Стартовый набор акцентов, собранный из твоей публичной работы и ближайшей экосистемы репозиториев.',
+      intro: 'Несколько публичных репозиториев, через которые видно мой подход к библиотекам, интеграционным границам и maintenance tooling.',
       cta: 'Открыть заметки о проектах',
-      note: 'Это хорошие опорные точки для публичной истории, потому что они показывают именно переиспользуемую инженерную работу, а не разовые продуктовые фичи.',
       items: [
         {
           name: 'vue-remote',
           href: 'https://github.com/omnicajs/vue-remote',
           summary: 'Инструмент для scaffolding и интеграции изолированных UI-расширений с sandbox-подобной моделью и remote rendering boundaries.',
+          note: 'Проект находится близко к платформенной работе: изоляция, контракты поставки и удобство безопасной разработки расширений.',
           tags: ['Remote UI', 'Architecture', 'Vue']
         },
         {
           name: 'modulify/validator',
           href: 'https://github.com/modulify/validator',
           summary: 'Библиотека общего назначения для валидации, построенная вокруг переиспользуемых наборов правил и проверок данных на уровне приложения.',
+          note: 'Здесь важен не декор форм, а небольшая модель правил, которую можно переносить через прикладной и интеграционный код.',
           tags: ['Validation', 'Library', 'Data']
         },
         {
           name: 'modulify/morph',
           href: 'https://github.com/modulify/morph',
           summary: 'Утилита для преобразования структур данных, хорошо отражающая интерес к трансформациям, композиции и ясности API.',
+          note: 'Это компактная utility-часть той же библиотечной линии: ясная граница вокруг преобразования формы данных.',
           tags: ['Utilities', 'Transformations', 'OSS']
         },
         {
           name: 'jmask',
           href: 'https://github.com/cmath10/jmask',
           summary: 'Библиотека масок для HTML input-элементов, которая показывает практичную frontend-инженерию и переиспользуемое поведение форм.',
+          note: 'Пакет намеренно близок к продуктовым деталям: поведение input, ограничения браузера и переиспользуемые UX-примитивы.',
           tags: ['Inputs', 'UX', 'OSS']
         }
       ]

@@ -5,7 +5,7 @@ outline: deep
 
 # Projects
 
-This section should act as a curated layer above GitHub, where each repository gets context that a README cannot easily provide.
+This page adds context around public repositories: what each project is for, where it fits, and which engineering concerns it represents beyond the README.
 
 ## Published npm packages
 
@@ -17,13 +17,13 @@ This section should act as a curated layer above GitHub, where each repository g
   npm-package="@omnicajs/vue-remote"
 />
 
-This is the clearest public example of work around third-party UI extensions, isolation boundaries and scaffolding for untrusted or separately developed interface code. It is also a good anchor for the more architectural side of the profile, because the package is not just a UI utility. It frames an integration model.
+This is the clearest public example of work around third-party UI extensions, isolation boundaries and scaffolding for untrusted or separately developed interface code. The package is not just a UI utility: it describes an integration model for separately delivered interface modules.
 
-Good things to emphasize here:
+Key themes:
 
 - remote rendering and isolation boundaries as a product-level concern
 - scaffolding for extension development rather than a one-off experiment
-- documentation and surrounding tooling as part of the package story
+- documentation and surrounding tooling as part of the package's value
 
 ### @modulify/validator
 
@@ -35,7 +35,7 @@ Good things to emphasize here:
 
 This package treats validation as a reusable application concern instead of a narrow form helper. It is built around rules, composition and API clarity.
 
-Good things to emphasize here:
+Key themes:
 
 - reusable validation rules and application-level data checks
 - library design around maintainability and extensibility
@@ -51,7 +51,7 @@ Good things to emphasize here:
 
 This package is about transformation, mapping and reshaping of data structures. It is a compact example of utility design with a clear abstraction boundary.
 
-Good things to emphasize here:
+Key themes:
 
 - transformation pipelines and shape conversion
 - composable utility design
@@ -65,9 +65,9 @@ Good things to emphasize here:
   npm-package="@cmath10/jmask"
 />
 
-This is the most directly UI-facing package in the set. It is useful for showing practical frontend engineering around user input, browser behavior and reusable form-oriented interaction patterns.
+This is the most directly UI-facing package in the set. It shows practical frontend engineering around user input, browser behavior and reusable form-oriented interaction patterns.
 
-Good things to emphasize here:
+Key themes:
 
 - browser-facing engineering with immediate product value
 - attention to UX details in input handling
@@ -144,7 +144,7 @@ Changelog generation package built around git history and configurable templates
 
 Higher-level release orchestration package that ties versioning, changelog updates and release commits into one flow.
 
-## Public ecosystem work not yet framed as released packages
+## Public ecosystem work outside released packages
 
 ### modulify/m3-web
 
@@ -153,7 +153,7 @@ Higher-level release orchestration package that ties versioning, changelog updat
   label="modulify/m3-web"
 />
 
-This is a supporting piece for UI-system work inside the broader modulify ecosystem. It adds a UI-layer counterpart to the utility and tooling packages around it.
+This project supports UI-system work inside the broader modulify ecosystem. It adds a UI-layer counterpart to the utility and tooling packages around it.
 
 ## Organization context
 
