@@ -326,16 +326,16 @@ body,
 
 .site-panel-card .p-tag,
 .site-project-card .p-tag {
-  border: 1px solid color-mix(in oklch, var(--vp-c-brand-1), transparent 68%);
-  background: color-mix(in oklch, var(--vp-c-brand-1), transparent 86%);
-  color: var(--vp-c-brand-1);
+  border: 1px solid var(--site-card-border);
+  background: oklch(96% 0.008 85 / 0.72);
+  color: oklch(44% 0.018 80);
+  font-weight: 500;
 }
 
 .dark .site-panel-card .p-tag,
 .dark .site-project-card .p-tag {
-  border-color: color-mix(in oklch, var(--vp-c-brand-1), transparent 72%);
-  background: color-mix(in oklch, var(--vp-c-brand-1), transparent 88%);
-  color: oklch(92.60% 0.0885 88.27);
+  background: oklch(100% 0 0 / 0.035);
+  color: oklch(82% 0.018 85);
 }
 
 .site-hero-mark {
