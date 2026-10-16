@@ -55,5 +55,7 @@ Multiple relations can be joined with `;`.
 
 ## Current scenarios
 
+- `navbar.env`
+  Purpose: verify the 60px navbar height (two small grid cells), the centered logo, and the seamless start of the homepage hero. Also run with `PLAYWRIGHT_GEOM_WIDTH=390` for mobile.
 - `timeline.env`
   Purpose: validate timeline marker alignment, continuity of the rail, and spacing between chips and the next item.

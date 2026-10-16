@@ -1,4 +1,6 @@
 :root {
+  --site-grid-cell: 30px;
+  --vp-nav-height: calc(var(--site-grid-cell) * 2);
   --vp-nav-bg-color: transparent;
   --vp-c-brand-1: oklch(74.32% 0.1411 80.94);
   --vp-c-brand-2: oklch(63.01% 0.1304 71.90);
@@ -147,7 +149,11 @@ body,
     linear-gradient(to bottom, var(--site-grid-minor) 1px, transparent 1px),
     linear-gradient(to right, var(--site-grid-major) 1px, transparent 1px),
     linear-gradient(to bottom, var(--site-grid-major) 1px, transparent 1px);
-  background-size: 30px 30px, 30px 30px, 150px 150px, 150px 150px;
+  background-size:
+    var(--site-grid-cell) var(--site-grid-cell),
+    var(--site-grid-cell) var(--site-grid-cell),
+    calc(var(--site-grid-cell) * 5) calc(var(--site-grid-cell) * 5),
+    calc(var(--site-grid-cell) * 5) calc(var(--site-grid-cell) * 5);
   background-position: top left;
   opacity: 0.65;
 }
