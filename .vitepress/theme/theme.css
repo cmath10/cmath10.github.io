@@ -25,19 +25,19 @@
     radial-gradient(circle at top left in srgb, oklch(68.47% 0.1479 237.32 / 0.09), oklch(68.47% 0.1479 237.32 / 0) 34%),
     linear-gradient(180deg in srgb, oklch(98.42% 0.0034 247.86 / 0.94), oklch(100% 0 0 / 0.98));
   --site-page-gradient:
-    radial-gradient(960px 960px at top left in srgb, oklch(80.85% 0.153 78.83 / 0.16), oklch(80.85% 0.153 78.83 / 0) 72%),
+    radial-gradient(960px 960px at top left in srgb, oklch(94% 0.025 85 / 0.16), oklch(94% 0.025 85 / 0) 72%),
     linear-gradient(180deg in srgb, oklch(98.02% 0.0068 247.89 / 0.96), oklch(98.42% 0.0034 247.86 / 0.95) 18rem, oklch(100% 0 0 / 0.98) 34rem);
   --site-topbar-border: oklch(55% 0.055 80 / 0.18);
   --site-topbar-shadow: 0 16px 34px oklch(20.77% 0.0398 265.75 / 0.08);
   --site-topbar-gradient:
-    radial-gradient(circle at top left in srgb, oklch(80.85% 0.153 78.83 / 0.18), oklch(80.85% 0.153 78.83 / 0) 34%),
+    radial-gradient(circle at top left in srgb, oklch(94% 0.025 85 / 0.18), oklch(94% 0.025 85 / 0) 34%),
     linear-gradient(135deg in srgb, oklch(98.34% 0.0042 236.50 / 0.94), oklch(97.80% 0.0062 255.47 / 0.92) 52%, oklch(100% 0 0 / 0.94));
   --site-hero-gradient:
-    radial-gradient(circle at top left in srgb, oklch(80.85% 0.153 78.83 / 0.15), oklch(80.85% 0.153 78.83 / 0) 38%),
+    radial-gradient(circle at top left in srgb, oklch(94% 0.025 85 / 0.15), oklch(94% 0.025 85 / 0) 38%),
     linear-gradient(180deg in srgb, oklch(98.02% 0.0068 247.89 / 0.96), oklch(98.42% 0.0034 247.86 / 0.95) 34%, oklch(100% 0 0 / 0.97));
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: linear-gradient(135deg in srgb, oklch(20.77% 0.0398 265.75) 10%, oklch(74.32% 0.1411 80.94) 50%, oklch(51.67% 0.1082 69.81) 100%);
-  --vp-home-hero-image-background-image: radial-gradient(circle at top in srgb, oklch(80.85% 0.153 78.83 / 0.38), oklch(74.32% 0.1411 80.94 / 0.08) 60%);
+  --vp-home-hero-image-background-image: radial-gradient(circle at top in srgb, oklch(94% 0.025 85 / 0.38), oklch(94% 0.025 85 / 0.08) 60%);
   --vp-home-hero-image-filter: blur(64px);
 }
 
@@ -66,18 +66,18 @@
     radial-gradient(circle at top left in srgb, oklch(100% 0 0 / 0.035), oklch(100% 0 0 / 0) 34%),
     linear-gradient(180deg in srgb, oklch(15.93% 0.0066 270.98 / 0.99), oklch(14.98% 0.0067 270.98 / 0.99));
   --site-page-gradient:
-    radial-gradient(960px 960px at top left in srgb, oklch(82.21% 0.1403 83.59 / 0.14), oklch(82.21% 0.1403 83.59 / 0) 72%),
+    radial-gradient(960px 960px at top left in srgb, oklch(60% 0.006 270 / 0.14), oklch(60% 0.006 270 / 0) 72%),
     linear-gradient(180deg in srgb, oklch(17.84% 0.0084 274.41 / 0.98), oklch(16.92% 0.0085 274.36 / 0.98) 18rem, oklch(14.98% 0.0067 270.98 / 0.99) 34rem);
   --site-topbar-border: oklch(70% 0.06 80 / 0.14);
   --site-topbar-shadow: 0 16px 34px oklch(0% 0 0 / 0.34);
   --site-topbar-gradient:
-    radial-gradient(circle at top left in srgb, oklch(82.21% 0.1403 83.59 / 0.13), oklch(82.21% 0.1403 83.59 / 0) 34%),
+    radial-gradient(circle at top left in srgb, oklch(60% 0.006 270 / 0.13), oklch(60% 0.006 270 / 0) 34%),
     linear-gradient(135deg in srgb, oklch(16.92% 0.0085 274.36 / 0.95), oklch(18.29% 0.0083 274.43 / 0.94) 52%, oklch(15.51% 0.0087 274.28 / 0.96));
   --site-hero-gradient:
-    radial-gradient(circle at top left in srgb, oklch(72.90% 0.1462 78.06 / 0.12), oklch(72.90% 0.1462 78.06 / 0) 36%),
+    radial-gradient(circle at top left in srgb, oklch(60% 0.006 270 / 0.12), oklch(60% 0.006 270 / 0) 36%),
     linear-gradient(180deg in srgb, oklch(18.74% 0.0083 274.45 / 0.97), oklch(17.38% 0.0084 274.39 / 0.98) 34%, oklch(15.51% 0.0087 274.28 / 0.99));
   --vp-home-hero-name-background: linear-gradient(135deg in srgb, oklch(98.42% 0.0034 247.86) 10%, oklch(87.77% 0.1121 88.49) 50%, oklch(82.21% 0.1403 83.59) 100%);
-  --vp-home-hero-image-background-image: radial-gradient(circle at top in srgb, oklch(82.21% 0.1403 83.59 / 0.32), oklch(72.90% 0.1462 78.06 / 0.08) 60%);
+  --vp-home-hero-image-background-image: radial-gradient(circle at top in srgb, oklch(60% 0.006 270 / 0.32), oklch(60% 0.006 270 / 0.08) 60%);
 }
 
 body,
@@ -249,7 +249,7 @@ body,
 
 .site-band-contact {
   background:
-    radial-gradient(circle at bottom right in srgb, oklch(80.85% 0.153 78.83 / 0.12), oklch(80.85% 0.153 78.83 / 0) 34%),
+    radial-gradient(circle at bottom right in srgb, oklch(94% 0.025 85 / 0.12), oklch(94% 0.025 85 / 0) 34%),
     linear-gradient(180deg in srgb, oklch(98.42% 0.0034 247.86 / 0.9), oklch(100% 0 0 / 0.98));
 }
 
@@ -262,7 +262,7 @@ body,
 
 .dark .site-band-contact {
   background:
-    radial-gradient(circle at bottom right in srgb, oklch(82.21% 0.1403 83.59 / 0.12), oklch(82.21% 0.1403 83.59 / 0) 34%),
+    radial-gradient(circle at bottom right in srgb, oklch(60% 0.006 270 / 0.12), oklch(60% 0.006 270 / 0) 34%),
     linear-gradient(180deg in srgb, oklch(15.93% 0.0066 270.98 / 0.99), oklch(14.98% 0.0067 270.98 / 0.99));
 }
 
@@ -861,25 +861,25 @@ body,
 
 .VPNavScreen {
   background:
-    radial-gradient(960px 960px at top left in srgb, oklch(80.85% 0.153 78.83 / 0.16), oklch(80.85% 0.153 78.83 / 0) 72%),
+    radial-gradient(960px 960px at top left in srgb, oklch(94% 0.025 85 / 0.16), oklch(94% 0.025 85 / 0) 72%),
     linear-gradient(180deg in srgb, oklch(98.02% 0.0068 247.89), oklch(98.42% 0.0034 247.86) 18rem, oklch(100% 0 0) 34rem) !important;
 }
 
 .dark .VPNavScreen {
   background:
-    radial-gradient(960px 960px at top left in srgb, oklch(82.21% 0.1403 83.59 / 0.14), oklch(82.21% 0.1403 83.59 / 0) 72%),
+    radial-gradient(960px 960px at top left in srgb, oklch(60% 0.006 270 / 0.14), oklch(60% 0.006 270 / 0) 72%),
     linear-gradient(180deg in srgb, oklch(17.84% 0.0084 274.41), oklch(16.92% 0.0085 274.36) 18rem, oklch(14.98% 0.0067 270.98) 34rem) !important;
 }
 
 .VPNavScreenAppearance {
   background:
-    radial-gradient(720px 720px at bottom right in srgb, oklch(80.85% 0.153 78.83 / 0.14), oklch(80.85% 0.153 78.83 / 0) 70%),
+    radial-gradient(720px 720px at bottom right in srgb, oklch(94% 0.025 85 / 0.14), oklch(94% 0.025 85 / 0) 70%),
     linear-gradient(180deg in srgb, oklch(100% 0 0), oklch(98.14% 0.0045 258.32) 18rem, oklch(97.13% 0.0068 247.90) 34rem) !important;
 }
 
 .dark .VPNavScreenAppearance {
   background:
-    radial-gradient(720px 720px at bottom right in srgb, oklch(82.21% 0.1403 83.59 / 0.12), oklch(82.21% 0.1403 83.59 / 0) 70%),
+    radial-gradient(720px 720px at bottom right in srgb, oklch(60% 0.006 270 / 0.12), oklch(60% 0.006 270 / 0) 70%),
     linear-gradient(180deg in srgb, oklch(14.50% 0.0067 270.47), oklch(15.98% 0.0086 274.31) 18rem, oklch(17.84% 0.0084 274.41) 34rem) !important;
 }
 
@@ -1025,7 +1025,7 @@ body,
 .VPLocalNavOutlineDropdown .items {
   border-color: var(--site-topbar-border);
   background:
-    radial-gradient(960px 960px at top left in srgb, oklch(80.85% 0.153 78.83 / 0.12), oklch(80.85% 0.153 78.83 / 0) 72%),
+    radial-gradient(960px 960px at top left in srgb, oklch(94% 0.025 85 / 0.12), oklch(94% 0.025 85 / 0) 72%),
     linear-gradient(180deg in srgb, oklch(98.14% 0.0045 258.32), oklch(97.50% 0.0062 255.47) 18rem, oklch(96.73% 0.0086 247.92) 34rem);
   box-shadow: var(--site-panel-shadow);
 }
@@ -1037,7 +1037,7 @@ body,
 
 .dark .VPLocalNavOutlineDropdown .items {
   background:
-    radial-gradient(960px 960px at top left in srgb, oklch(82.21% 0.1403 83.59 / 0.12), oklch(82.21% 0.1403 83.59 / 0) 72%),
+    radial-gradient(960px 960px at top left in srgb, oklch(60% 0.006 270 / 0.12), oklch(60% 0.006 270 / 0) 72%),
     linear-gradient(180deg in srgb, oklch(17.84% 0.0084 274.41), oklch(15.51% 0.0087 274.28) 18rem, oklch(13.13% 0.0063 270.74) 34rem);
 }
 
