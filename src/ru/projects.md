@@ -65,7 +65,7 @@ outline: deep
   npm-package="@cmath10/jmask"
 />
 
-Это самый явно UI-ориентированный пакет в наборе. Он посвящен практичной frontend-инженерии вокруг пользовательского ввода, браузерного поведения и переиспользуемых паттернов работы с формами.
+Этот пакет посвящен пользовательскому вводу, браузерному поведению и переиспользуемым паттернам работы с формами.
 
 Ключевые темы:
 
@@ -144,8 +144,6 @@ outline: deep
 
 Более высокоуровневый пакет оркестрации релиза, который связывает versioning, обновление changelog и release-коммиты в единый поток.
 
-## Публичная экосистемная работа вне опубликованных пакетов
-
 ### modulify/m3-web
 
 <ProjectMetaLinks
@@ -153,7 +151,41 @@ outline: deep
   label="modulify/m3-web"
 />
 
-Этот проект поддерживает работу над UI-системой внутри более широкой экосистемы modulify. Он добавляет к utility- и tooling-пакетам отдельный UI-слой.
+Библиотека компонентов Material Design 3 для React и Vue с общими стилями, дизайн-токенами и утилитами. Первые релизы всех трех пакетов уже доступны на npm.
+
+В проекте я работаю над согласованностью API и поведения компонентов в разных фреймворках, опираясь на общую UI-основу. Это направление компонентных библиотек внутри modulify, дополняющее утилиты и инструменты разработки.
+
+Опубликованные пакеты в этой монорепе:
+
+#### @modulify/m3-foundation
+
+<ProjectMetaLinks
+  href="https://github.com/modulify/m3-web/tree/main/m3-foundation"
+  label="@modulify/m3-foundation"
+  npm-package="@modulify/m3-foundation"
+/>
+
+Общие стили Material Design 3, дизайн-токены и базовые утилиты для реализаций на React и Vue.
+
+#### @modulify/m3-react
+
+<ProjectMetaLinks
+  href="https://github.com/modulify/m3-web/tree/main/m3-react"
+  label="@modulify/m3-react"
+  npm-package="@modulify/m3-react"
+/>
+
+Компоненты Material Design 3 для React, построенные на общей основе.
+
+#### @modulify/m3-vue
+
+<ProjectMetaLinks
+  href="https://github.com/modulify/m3-web/tree/main/m3-vue"
+  label="@modulify/m3-vue"
+  npm-package="@modulify/m3-vue"
+/>
+
+Компоненты Material Design 3 для Vue, использующие ту же основу, что и реализация на React.
 
 ## Контекст организаций
 

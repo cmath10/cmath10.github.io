@@ -65,7 +65,7 @@ Key themes:
   npm-package="@cmath10/jmask"
 />
 
-This is the most directly UI-facing package in the set. It shows practical frontend engineering around user input, browser behavior and reusable form-oriented interaction patterns.
+This package focuses on user input, browser behavior and reusable form-oriented interaction patterns.
 
 Key themes:
 
@@ -144,8 +144,6 @@ Changelog generation package built around git history and configurable templates
 
 Higher-level release orchestration package that ties versioning, changelog updates and release commits into one flow.
 
-## Public ecosystem work outside released packages
-
 ### modulify/m3-web
 
 <ProjectMetaLinks
@@ -153,7 +151,41 @@ Higher-level release orchestration package that ties versioning, changelog updat
   label="modulify/m3-web"
 />
 
-This project supports UI-system work inside the broader modulify ecosystem. It adds a UI-layer counterpart to the utility and tooling packages around it.
+A Material Design 3 component library for React and Vue, built around shared styles, design tokens and utilities. The first releases of all three packages are available on npm.
+
+The project explores how to keep component APIs and behavior consistent across frameworks while sharing the UI foundation. It adds a component-library direction to modulify's utility and tooling work.
+
+Published packages in this monorepo:
+
+#### @modulify/m3-foundation
+
+<ProjectMetaLinks
+  href="https://github.com/modulify/m3-web/tree/main/m3-foundation"
+  label="@modulify/m3-foundation"
+  npm-package="@modulify/m3-foundation"
+/>
+
+Shared Material Design 3 styles, design tokens and base utilities used by the React and Vue implementations.
+
+#### @modulify/m3-react
+
+<ProjectMetaLinks
+  href="https://github.com/modulify/m3-web/tree/main/m3-react"
+  label="@modulify/m3-react"
+  npm-package="@modulify/m3-react"
+/>
+
+Material Design 3 components for React, built on the shared foundation.
+
+#### @modulify/m3-vue
+
+<ProjectMetaLinks
+  href="https://github.com/modulify/m3-web/tree/main/m3-vue"
+  label="@modulify/m3-vue"
+  npm-package="@modulify/m3-vue"
+/>
+
+Material Design 3 components for Vue, built on the same foundation as the React implementation.
 
 ## Organization context
 
